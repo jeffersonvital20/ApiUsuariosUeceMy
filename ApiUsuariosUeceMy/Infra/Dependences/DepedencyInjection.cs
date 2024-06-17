@@ -1,9 +1,10 @@
 ﻿
 using ApiUsuariosUeceMy.Domain.Interfaces;
 using ApiUsuariosUeceMy.Infra.Repositories;
-using Microsoft.Extensions.DependencyInjection;
+using ApiUsuariosUeceMy.Services;
+using ApiUsuariosUeceMy.Services.Interface;
 
-namespace AppChurch.Ioc.Dependences
+namespace ApiUsuariosUeceMy.Infra.Dependences
 {
     public static class DepedencyInjection
     {
@@ -15,6 +16,7 @@ namespace AppChurch.Ioc.Dependences
         private static void AddRepositoryDependency(IServiceCollection services)
         {
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IRabbitServices, RabbitServices>();
         }
     }
 }

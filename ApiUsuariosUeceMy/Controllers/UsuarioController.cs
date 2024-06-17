@@ -3,6 +3,7 @@ using ApiUsuariosUeceMy.Domain.Model;
 using ApiUsuariosUeceMy.Domain.Request.Command;
 using ApiUsuariosUeceMy.Domain.Request.Query;
 using ApiUsuariosUeceMy.Domain.RequestHandlers.QueryHandler;
+using ApiUsuariosUeceMy.Services.Results;
 using ApiUsuariosUeceMy.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,16 @@ namespace ApiUsuariosUeceMy.Controllers
         [HttpPost("Autorizar")]
         public Task<IActionResult> Autorizar([FromBody] AutorizarUsuarioViewModel autorizarUsuario)
             => SendRequest(new AutorizarUsuarioRequest(autorizarUsuario));
+
+        [HttpGet("Cursos")]
+        public Task<IActionResult> GetAllCursos([FromQuery] Guid id) => SendRequest(new GetAllCursosUsuarioQuery(id));
+
+        [HttpGet("AtualizaCurso")]
+        public Task<IActionResult> GetAtualizaCurso()
+            => SendRequest(new GetCursoAtualizadoQuery());
+
+        [HttpPost("AtualizaCurso")]
+        public Task<IActionResult> GetAtualizaCurso([FromQuery] Payment pagamento) => SendRequest(new AtualizarCursoRequest(pagamento));
 
     }
 }

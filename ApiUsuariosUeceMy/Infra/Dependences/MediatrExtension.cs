@@ -10,6 +10,7 @@ namespace AppChurch.Ioc.Dependences
             //services.AddMediatR(typeof(CreateMembroRequest).Assembly);
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(CreateUsuarioRequest).Assembly));
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(AutorizarUsuarioRequest).Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(AtualizarCursoRequest).Assembly));
             //services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(UpdateMembroRequest).Assembly));
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(UsuarioGetByIdQuery).Assembly));
         }

@@ -1,6 +1,42 @@
 [
   {
     "ContainingType": "ApiUsuariosUeceMy.Controllers.UsuarioController",
+    "Method": "GetAtualizaCurso",
+    "RelativePath": "api/Usuario/AtualizaCurso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUsuariosUeceMy.Controllers.UsuarioController",
+    "Method": "GetAtualizaCurso",
+    "RelativePath": "api/Usuario/AtualizaCurso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdUsuario",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdCurso",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "pago",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUsuariosUeceMy.Controllers.UsuarioController",
     "Method": "Autorizar",
     "RelativePath": "api/Usuario/Autorizar",
     "HttpMethod": "POST",
@@ -27,6 +63,22 @@
         "Name": "usuario",
         "Type": "ApiUsuariosUeceMy.Domain.Model.Usuario",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUsuariosUeceMy.Controllers.UsuarioController",
+    "Method": "GetAllCursos",
+    "RelativePath": "api/Usuario/Cursos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

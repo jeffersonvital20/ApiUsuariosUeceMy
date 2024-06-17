@@ -1,4 +1,5 @@
 using ApiUsuariosUeceMy.Infra.Context;
+using ApiUsuariosUeceMy.Infra.Dependences;
 using AppChurch.Ioc.Dependences;
 using Microsoft.EntityFrameworkCore;
 using Steeltoe.Discovery.Client;

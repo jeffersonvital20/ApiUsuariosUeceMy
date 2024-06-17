@@ -138,3 +138,5 @@ C:\Users\jeffe\Documents\arquivos\Projetos\ApiUsuariosUeceMy\ApiUsuariosUeceMy\o
 C:\Users\jeffe\Documents\arquivos\Projetos\ApiUsuariosUeceMy\ApiUsuariosUeceMy\obj\Debug\net8.0\ApiUsuariosUeceMy.pdb
 C:\Users\jeffe\Documents\arquivos\Projetos\ApiUsuariosUeceMy\ApiUsuariosUeceMy\obj\Debug\net8.0\ApiUsuariosUeceMy.genruntimeconfig.cache
 C:\Users\jeffe\Documents\arquivos\Projetos\ApiUsuariosUeceMy\ApiUsuariosUeceMy\obj\Debug\net8.0\ref\ApiUsuariosUeceMy.dll
+C:\Users\jeffe\Documents\arquivos\Projetos\ApiUsuariosUeceMy\ApiUsuariosUeceMy\obj\Debug\net8.0\ApiUsuariosUeceMy.sourcelink.json
+C:\Users\jeffe\Documents\arquivos\Projetos\ApiUsuariosUeceMy\ApiUsuariosUeceMy\bin\Debug\net8.0\RabbitMQ.Client.dll
